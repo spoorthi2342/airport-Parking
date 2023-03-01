@@ -312,7 +312,7 @@ html {
       height: 50px;
       width: 50px;
       min-height: 50px;
-      minHeight: 50px;
+      min-height: 50px;
       min-width: 50px;
       max-height: 50px;
       max-width: 50px;
@@ -333,7 +333,7 @@ html {
       height: 50px;
       width: 50px;
       min-height: 50px;
-      minHeight: 50px;
+      min-height: 50px;
       min-width: 50px;
       max-height: 50px;
       max-width: 50px;
@@ -706,7 +706,7 @@ html {
           height: 50px;
           width: 50px;
           min-height: 50px;
-          minHeight: 50px;
+          min-height: 50px;
           min-width: 50px;
           max-height: 50px;
           max-width: 50px;
@@ -727,7 +727,7 @@ html {
           height: 50px;
           width: 50px;
           min-height: 50px;
-          minHeight: 50px;
+          min-height: 50px;
           min-width: 50px;
           max-height: 50px;
           max-width: 50px;
