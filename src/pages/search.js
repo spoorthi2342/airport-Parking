@@ -69,7 +69,11 @@ const SearchForm = () => {
     
     return (
         <section id="hero"
-        style={{backgroundImage: 'url("assets/generic_landing.jpg")', minHeight: '500px'}}>
+        style={{ 
+            backgroundImage:`url(${require("./assets/generic_landing.jpg")})`,
+            minHeight: '500px',
+            backgroundSize:'cover',
+          }}>
         <div className="hero-backdrop"></div>
         <div className="container position-relative">
             <div className="hero-heading mb-4">

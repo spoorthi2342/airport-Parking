@@ -1,42 +1,15 @@
+
 function HomePage() {
     return (
       <div className="App">
-            <div id="app" className="generic">
+            <div id="app" className="generic"
+            style={{ 
+            backgroundImage:`url(${require("./assets/generic_landing.jpg")})`,
+            minHeight: '500px',
+            backgroundSize:'cover',
+          }}>
           <div>
-              <app-header>
-                  <header>
-                      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-                          <a className="navbar-brand" href="/"><img src={require("./assets/navigation_logo.png")}
-                                  alt="AIRPORT PARKING - RESERVATIONS.COM" itemProp="logo" height="40" /></a>
-
-
-                          <div className="col"></div>
-
-
-
-                          <div className="collapse navbar-collapse flex-row-reverse" id="navbarNavDropdown">
-                              <ul className="navbar-nav">
-
-                                  <li className="nav-item dropdown">
-                                      <a className="nav-link dropdown-toggle" href="/" id="navbarDropdownMenuLink"
-                                          role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                          My Account
-                                      </a>
-                                      <div className="dropdown-menu dropdown-menu-right"
-                                          aria-labelledby="navbarDropdownMenuLink">
-
-                                          <a className="dropdown-item sign-in" href="/">Sign In</a>
-                                          <a className="dropdown-item sign-up" href="/">Register</a>
-                                      </div>
-                                  </li>
-
-                              </ul>
-                          </div>
-                      </nav>
-                  </header>
-              </app-header>
               <div className="content">
-                  <us-page-home inline-template>
                       <section id="home_page">
                           <div className="years-of-service">
                               <div className="container">
@@ -44,11 +17,7 @@ function HomePage() {
                                   service team in the US, we are committed to serving you.
                               </div>
                           </div>
-                          <section id="hero"
-                              style={{ 
-                                backgroundImage: `url(${process.env.PUBLIC_URL}/assets/generic_landing.jpg)`,
-                                minHeight: '500px'
-                              }}>
+                          <section id="hero">
                               <div className="hero-backdrop"></div>
                               <div className="container position-relative">
                                   <div className="hero-heading mb-4">
@@ -101,120 +70,8 @@ function HomePage() {
                                   </div>
                               </div>
                           </section>
-                          <section id="benefits">
-                              <div className="container">
-                                  <h5>What Can You Save with AirportParkingReservations.com?</h5>
-
-                                  <ul className="row">
-                                      <li className="col-12 col-lg-4 p-3">
-                                          <img src={require("./assets/check.png")} alt="Tick" width="50" height="50" />
-                                          <div>
-                                              <h6>Save Money</h6>
-                                              <p>Save up to 70% off on our site compared to the cost of on-airport
-                                                  parking.</p>
-                                          </div>
-                                      </li>
-                                      <li className="col-12 col-lg-4 p-3">
-                                          <img src={require("./assets/check.png")} alt="Tick" width="50" height="50" />
-                                          <div>
-                                              <h6>Save Time</h6>
-                                              <p>
-                                                  It's easy to compare parking at all major airports.<br />
-                                                  Booking a reservation is quick & simple!
-                                              </p>
-                                          </div>
-                                      </li>
-                                      <li className="col-12 col-lg-4 p-3">
-                                          <img src={require("./assets/check.png")} alt="Tick" width="50" height="50" />
-                                          <div>
-                                              <h6>Save Stress</h6>
-                                              <p>
-                                                  Guarantee your parking spot by booking in advance. Can't make it?
-                                                  Cancellations are free.
-                                              </p>
-                                          </div>
-                                      </li>
-                                  </ul>
-                              </div>
-                          </section>
-
                       </section>
-                  </us-page-home>
               </div>
-
-
-              <section id="footer">
-                  <div className="container">
-
-                      <div className="row">
-                          <div className="col-4 col-lg-2 footer-links text-center text-lg-left">
-                              <p>Navigation</p>
-                              <ul>
-                                  <li><a href="/" title="Home">Home</a></li>
-
-
-                              </ul>
-                          </div>
-
-                          <div className="col-4 col-lg-2 footer-links text-center text-lg-left">
-                              <p>Get Involved</p>
-                              <ul>
-                                  <li><a href="/register/partner" title="Parking Partners">Parking Partners</a></li>
-
-                              </ul>
-                          </div>
-
-                          <div className="col-4 col-lg-2 footer-links text-center text-lg-left">
-                              <p>Discover</p>
-                              <ul>
-                                  <li><a href="/help" title="Customer Service">Help</a></li>
-
-                              </ul>
-                          </div>
-
-                          <div className="social-media col-md-6 hidden-md-down">
-                              <div className="row">
-                                  <div className="col">
-                                      <div className="social-media-icons">
-                                          <a href="/"
-                                              title="Facebook" target="_blank">
-                                              <div className="fab fa-facebook-f fa-2x"></div>
-                                              <span>Facebook</span>
-                                          </a>
-                                      </div>
-
-                                  </div>
-
-                                  <div className="col">
-                                      <div className="social-media-icons">
-                                          <a href="/" title="Instagram"
-                                              target="_blank">
-                                              <div className="fab fa-instagram fa-2x"></div>
-                                              <span>Instagram</span>
-                                          </a>
-                                      </div>
-
-                                  </div>
-
-                                  <div className="col">
-                                      <div className="social-media-icons">
-                                          <a href="/"
-                                              title="Linkedin" target="_blank">
-                                              <div className="fab fa-linkedin-in fa-2x"></div>
-                                              <span>Linkedin</span>
-                                          </a>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-
-                      <div className="copyright">
-                          © 2000 - 2023 AirportParkingReservations.com, Inc. All Rights Reserved.<br />
-                          MAG USA, 100 North Lasalle Street, Chicago, IL, 60602
-                      </div>
-                  </div>
-              </section>
           </div>
       </div>
 
